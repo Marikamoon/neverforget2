@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!--LIST VIEW-->
+
+
+    <!--TITTLE-->
+
+    <!--NAMES-->
+    <TextView
+        android:id="@+id/Name"
+        style="@style/add_birthday_names_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="71dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Birthday"
+            style="@style/add_birthday_names_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Birthday"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NameEdit" />
+
+    <TextView
+        android:id="@+id/TimeZone"
+        style="@style/add_birthday_names_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Time Zone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MonthDay" />
+
+    <TextView
+        android:id="@+id/Alarm"
+        style="@style/add_birthday_names_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Alarm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeZoneText" />
+
+        <TextView
+            android:id="@+id/Noticifation"
+            style="@style/add_birthday_names_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Notification"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <TextView
+            android:id="@+id/Sound"
+            style="@style/add_birthday_names_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Sound"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/Lebel"
+            style="@style/add_birthday_names_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Lebel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundEdit" />
+
+        <TextView
+            android:id="@+id/Note"
+            style="@style/add_birthday_names_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Note"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Lebel" />
+
+
+<!--TEXT INPUT BOXES-->
+
+
+    <EditText
+        android:id="@+id/NameEdit"
+        style="@style/ET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_boxh"
+        android:layout_marginStart="@dimen/input_boxms"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/boxshadow"
+        android:elevation="@dimen/input_boxe"
+        android:hint="Marika Moon"
+        android:paddingLeft="@dimen/input_boxpl"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+        <Button
+            android:id="@+id/MonthDayEdit"
+            style="@style/ET"
+            android:text="MM"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/input_boxh"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/boxshadow"
+            android:elevation="@dimen/input_boxe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Birthday" />
+
+
+        <Button
+            android:id="@+id/dayEdit"
+            style="@style/ET"
+            android:layout_width="@dimen/input_boxDw"
+            android:layout_height="@dimen/input_boxh"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/boxshadow"
+            android:elevation="@dimen/input_boxe"
+            android:text="DD"
+            app:layout_constraintStart_toEndOf="@+id/MonthDayEdit"
+            app:layout_constraintTop_toBottomOf="@+id/Birthday" />
+
+        <Button
+            android:id="@+id/YearEdit"
+            style="@style/ET"
+            android:layout_width="@dimen/input_boxYw"
+            android:layout_height="@dimen/input_boxh"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/boxshadow"
+            android:elevation="@dimen/input_boxe"
+            android:text="YYYY"
+            app:layout_constraintStart_toEndOf="@+id/dayEdit"
+            app:layout_constraintTop_toBottomOf="@+id/Birthday" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_boxcheck"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/boxshadow"
+            android:elevation="@dimen/input_boxe"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Alarm">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                style="@style/CT"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/checkboxh"
+                android:text="5 hours before the birthday" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                style="@style/CT"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/checkboxh"
+                android:text="7 am of the birthday" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                style="@style/CT"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/checkboxh"
+                android:text="Night before the birthday" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_boxcheck"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/boxshadow"
+            android:elevation="@dimen/input_boxe"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Noticifation">
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                style="@style/CT"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/checkboxh"
+                android:text="5 hours before the birthday" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                style="@style/CT"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/checkboxh"
+                android:text="7 am of the birthday" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                style="@style/CT"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/checkboxh"
+                android:text="Night before the birthday" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/soundEdit"
+            style="@style/ET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_boxh"
+            android:layout_marginStart="@dimen/input_boxms"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/boxshadow"
+            android:elevation="@dimen/input_boxe"
+            android:hint="Noisy Beat"
+            android:paddingLeft="@dimen/input_boxpl"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Sound" />
+
+        <EditText
+            android:id="@+id/NoteEdit"
+            style="@style/ET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_boxcheck"
+            android:layout_marginStart="@dimen/input_boxms"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/boxshadow"
+            android:elevation="@dimen/input_boxe"
+            android:hint="She wants to get a nice ipad case.Take her out to Disney Land and Dinner with firework!"
+            android:paddingLeft="@dimen/input_boxpl"
+            android:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Note" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/Lebel" />
+
+    <!--HINT-->
+    <!--SEND AND CANCEL BUTTON-->
+
+
+        <Button
+            android:id="@+id/TimeZoneText"
+            style="@style/ET"
+            android:text="Vancouver/America"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_boxh"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/boxshadow"
+            android:elevation="@dimen/input_boxe"
+            android:paddingLeft="@dimen/input_boxpl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TimeZone" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NoteEdit" />
+
+
+        <TextView
+            android:id="@+id/MonthDay"
+            style="@style/PinkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="9dp"
+            android:text="Month"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MonthDayEdit" />
+
+        <TextView
+            android:id="@+id/MonthDay"
+            style="@style/PinkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="8dp"
+            android:text="Day"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dayEdit" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/PinkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="9dp"
+            android:text="Year"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/YearEdit" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="Add" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday" />
+    </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+

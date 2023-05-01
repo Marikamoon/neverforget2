@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="input_boxw">300dp</dimen>
+    <dimen name="input_boxh">30dp</dimen>
+    <dimen name="input_boxms">16dp</dimen>
+    <dimen name="input_boxe">2dp</dimen>
+    <dimen name="input_boxpl">10dp</dimen>
+    <dimen name="input_boxMw">50dp</dimen>
+    <dimen name="input_boxDw">40dp</dimen>
+    <dimen name="input_boxYw">50dp</dimen>
+
+    <dimen name="input_boxcheck">100dp</dimen>
+
+    <dimen name="checkboxh">30dp</dimen>
+    <dimen name="edge">16dp</dimen>
+
+</resources>

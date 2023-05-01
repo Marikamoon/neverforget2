@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TITTLE PINK TEXT-->
+    <style name="TP">
+        <item name="android:textColor">@color/tittlePink</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+    </style>
+    <!--TITTLE PINK TEXT-->
+    <style name="TG">
+        <item name="android:textColor">@color/tittleGray</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+    </style>
+    <!--ADD BIRTHDAY NAMES-->
+    <style name="add_birthday_names_style">
+        <item name="android:textColor">@color/names</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+    </style>
+    <!--EDIT TEXT-->
+    <style name="ET">
+        <item name="android:textColorHint">@color/hintText</item>
+        <item name="android:textColor">@color/inputText</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+    </style>
+    <style name="PinkText">
+        <item name="android:textColorHint">@color/hintText</item>
+        <item name="android:textColor">@color/tittlePink</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+    </style>
+
+    <!--CHECKBOX TEXT-->
+    <style name="CT">
+        <item name="android:textColorHint">@color/hintText</item>
+        <item name="android:textColor">@color/inputText</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+    </style>
+
+
+</resources>
